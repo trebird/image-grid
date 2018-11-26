@@ -31,15 +31,49 @@ body {
   section {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   section .photo{
     width: 50%;
-    margin: 0;
   }
 
   section .photo:first-child {
     width: 100%;
+  }
 
+}
+
+@media only screen and (min-width: 38em) {
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section .photo{
+    width: 33.3333%;
+  }
+
+  section .photo:first-child {
+    width: 100%;
+  }
+
+  section .photo:last-child {
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  section .photo {
+    width: 33.3333%;
+  }
+
+  section .photo:first-child {
+    width: 66.6666%;
+  }
+
+  section .photo:last-child {
+    visibility: visible;
   }
