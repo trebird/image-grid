@@ -17,13 +17,7 @@ html {
 }
 
 body {
-  display: flex;
   margin: 0;
-}
-
-.photo img {
-  display: flex;
-  width: 100%;
 }
 
 img {
@@ -53,18 +47,12 @@ img {
 
   .photo:nth-child(2),
   .photo:nth-child(5) {
-    display: flex;
-    align-items: flex-end;
+    display: block;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
-
-  section {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   section .photo {
     width: 33.3333%;
@@ -75,7 +63,7 @@ img {
   }
 
   section .photo:last-child {
-    visibility: hidden;
+    display: none;
   }
 
 }
@@ -91,7 +79,7 @@ img {
   }
 
   section .photo:last-child {
-    visibility: visible;
+    display: block;
   }
 
 }
